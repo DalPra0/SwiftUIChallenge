@@ -55,7 +55,12 @@ struct ContentView: View {
                                     .frame(width: 55, height: 55)
                                 VStack(alignment: .leading){
                                     Text(song.title)
-                                    Text(song.artist)
+                                    HStack{
+                                        if song.explicit {
+                                            Image(systemName: "e.square.fill")
+                                        }
+                                        Text(song.artist)
+                                    }
                                 }
                             }
                         }
