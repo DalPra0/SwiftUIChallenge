@@ -14,7 +14,9 @@ let package = Package(
     targets: [
         .target(
             name: "SwiftUIChallenge",
-            dependencies: []),
+            dependencies: [],
+            path: "Dia1"
+        ),
         .testTarget(
             name: "SwiftUIChallengeTests",
             dependencies: ["SwiftUIChallenge"]),
